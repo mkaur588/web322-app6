@@ -35,7 +35,6 @@ cloudinary.config({
     api_secret: '8kE3Cp8pA7PAe4RzWO4ICj9jO1Y',
     secure: true
 });
-
 const upload = multer();
 
 app.engine(".hbs", exphbs.engine({
@@ -90,7 +89,6 @@ function ensureLogin(req, res, next) {
       next();
     }
 }
-
 
 app.use(express.urlencoded({extended: true}));
 
