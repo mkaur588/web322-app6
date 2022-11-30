@@ -8,7 +8,10 @@
                 {{#safeHTML data.post.body}}{{/safeHTML}}
                 <br /><br />
                 <strong>Category:</strong> {{data.post.category}}<br />
-                <strong>Last Updated:</strong> {{#formatDate data.post.postDate}}{{/formatDate}}
+                <script>
+                    console.log(data.post)
+                </script>
+                <strong>Last Updated:</strong> {{#formatDate data.post.updatedAt}}{{/formatDate}}
             </article>
         {{else}}
             <div class="col-md-12 text-center">

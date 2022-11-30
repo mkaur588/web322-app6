@@ -8,7 +8,7 @@
 *  Student ID: 153851217
 *  Date: 30/11/2022
 *
-*  Online (Cyclic) Link: ________________________________________________________
+*  Online (Cyclic) Link: https://shy-erin-worm-yoke.cyclic.app
 *
 ********************************************************************************/ 
 
@@ -321,6 +321,7 @@ app.get("/categories/delete/:id", ensureLogin, (req,res)=>{
     });
 });
 
+// Adding new routes to login and logout and user history
 app.get("/login", function(req, res) {
     res.render('login');
 });
